@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gk7o - المدونة التقنية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- تضمين مكتبة Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* تخصيص الخطوط والألوان */
+        body, html {
+            font-family: 'Tajawal', sans-serif;
+            color: #f0f0f0;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* خلفية النقاط المتحركة */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        header nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(20, 20, 20, 0.95);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+            z-index: 2;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff77e9;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff77e9;
+            border-bottom: 2px solid #ff77e9;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .article-preview {
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .article-preview h2 {
+            font-size: 1.8rem;
+            color: #ff77e9;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ff77e9;
+            display: inline-block;
+        }
+
+        .article-preview p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+
+        .read-more {
+            color: #ff77e9;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #ff47c0;
+        }
+    </style>
+</head>
+<body>
+    <!-- خلفية النقاط المتحركة -->
+    <div id="particles-js"></div>
+
+    <header>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="info.html">المعلومات</a>
+            <a href="projects.html">المشاريع</a>
+            <a href="blog.html">المدونة</a>
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content" data-aos="fade-up">
+            <h1>المدونة التقنية</h1>
+
+            <!-- مقالة 1 -->
+            <div class="article-preview" data-aos="fade-right">
+                <h2>أساسيات البرمجة: كيف تبدأ في البرمجة</h2>
+                <p>تعلم البرمجة أصبح من أهم المهارات في العصر الرقمي. في هذه المقالة، سنتناول الخطوات الأساسية التي تساعدك على البدء في تعلم البرمجة من الصفر، وأهم اللغات والأدوات المستخدمة.</p>
+                <a href="article1.html" class="read-more">اقرأ المزيد</a>
+            </div>
+
+            <!-- مقالة 2 -->
+            <div class="article-preview" data-aos="fade-right" data-aos-delay="100">
+                <h2>الأمن السيبراني: حماية البيانات في العصر الرقمي</h2>
+                <p>مع زيادة الاعتماد على الإنترنت، أصبحت الحاجة للأمن السيبراني ضرورة. اكتشف أهم التقنيات والممارسات التي يمكنك اتباعها لحماية بياناتك وتأمين أجهزتك.</p>
+                <a href="article2.html" class="read-more">اقرأ المزيد</a>
+            </div>
+
+            <!-- مقالة 3 -->
+            <div class="article-preview" data-aos="fade-right" data-aos-delay="200">
+                <h2>تطوير الويب: من HTML إلى تطبيقات الويب المتقدمة</h2>
+                <p>في هذه المقالة، نتحدث عن كيفية تطوير مواقع ويب متكاملة، بدايةً من HTML وCSS وحتى JavaScript وأطر العمل المتقدمة، ونصائح لتحسين تجربتك في تطوير الويب.</p>
+                <a href="article3.html" class="read-more">اقرأ المزيد</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- تضمين مكتبة AOS وتهيئتها -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // مدة التأثيرات
+        once: true     // يتم تشغيل التأثيرات مرة واحدة فقط عند التمرير الأول
+      });
+    </script>
+    <!-- تضمين مكتبة particles.js وتهيئتها -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ff77e9"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ff77e9",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>

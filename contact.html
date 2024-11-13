@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gk7o - اتصل بنا</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- ربط مكتبة Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* تخصيص الخطوط والألوان */
+        body, html {
+            font-family: 'Tajawal', sans-serif;
+            color: #f0f0f0;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
+
+        header nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(20, 20, 20, 0.95);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+            z-index: 2;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff77e9;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            animation: fadeIn 1s ease forwards;
+            z-index: 2;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff77e9;
+            border-bottom: 2px solid #ff77e9;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+            margin: 15px 0;
+        }
+
+        .map-container {
+            margin-top: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .contact-form label {
+            color: #ff77e9;
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ff77e9;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #ff77e9;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 25px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #ff47c0;
+            transform: translateY(-3px);
+        }
+
+        /* أيقونات وسائل التواصل الاجتماعي */
+        .social-icons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: #ff77e9;
+            font-size: 1.8rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff47c0;
+            transform: scale(1.2);
+        }
+
+        /* تأثيرات التمرير */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- خلفية النقاط المتحركة -->
+    <div id="particles-js"></div>
+    
+    <header>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="info.html">المعلومات</a>
+            <a href="projects.html">المشاريع</a>
+            <a href="blog.html">المدونة</a>
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>اتصل بنا</h1>
+            <p>للتواصل: <a href="mailto:gk7o.protection@gmail.com" style="color: #ff77e9; text-decoration: underline;">gk7o.protection@gmail.com</a></p>
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=Imam%20Muhammad%20Ibn%20Saud%20Islamic%20University,%20Riyadh,%20Saudi%20Arabia&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- نموذج التواصل -->
+            <div class="contact-form">
+                <form action="mailto:gk7o.protection@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">الاسم</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit" class="cta-button">إرسال الرسالة</button>
+                </form>
+            </div>
+
+            <!-- أيقونات وسائل التواصل الاجتماعي -->
+            <div class="social-icons">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- مكتبة النقاط المتحركة -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

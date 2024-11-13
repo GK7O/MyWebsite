@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Tajawal', sans-serif;
+    overflow-x: hidden;
+}
+
+/* خلفية النقاط المتحركة */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* تنسيق شريط التنقل */
+header nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.9);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff77e9; /* لون التفاعل */
+}
+
+/* تنسيق النص الرئيسي */
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ff77e9;
+    z-index: 2;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.centered-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.centered-text p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* أزرار الدعوة للتفاعل */
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #ff77e9;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ff47c0;
+    transform: translateY(-2px);
+}
+
+/* تأثيرات الأيقونات الاجتماعية */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    z-index: 2;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    font-size: 1.5rem;
+    color: #ff77e9;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff47c0;
+    transform: scale(1.1);
+}
+
+/* التنسيق الداخلي للمحتوى */
+.content {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    animation: fadeIn 1s ease forwards;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* تأثيرات التمرير */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

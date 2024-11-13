@@ -11,7 +11,7 @@ body, html {
     overflow-x: hidden;
 }
 
-/* خلفية النقاط المتحركة */
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -20,7 +20,7 @@ body, html {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* تنسيق شريط التنقل */
+
 header nav {
     position: fixed;
     top: 0;
@@ -41,10 +41,10 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff77e9; /* لون التفاعل */
+    color: #ff77e9; 
 }
 
-/* تنسيق النص الرئيسي */
+
 .centered-text {
     position: absolute;
     top: 50%;
@@ -67,7 +67,7 @@ nav a:hover {
     font-weight: 400;
 }
 
-/* أزرار الدعوة للتفاعل */
+
 .cta-button {
     display: inline-block;
     margin-top: 15px;
@@ -85,7 +85,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* تأثيرات الأيقونات الاجتماعية */
+
 .social-icons {
     display: flex;
     justify-content: center;
@@ -105,7 +105,7 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* التنسيق الداخلي للمحتوى */
+
 .content {
     padding: 20px;
     text-align: center;
@@ -122,7 +122,7 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* تأثيرات التمرير */
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
